@@ -1,0 +1,19 @@
+/*
+    #EEE5E9
+    #2E2E3A
+    #446DF6
+    #FCA311
+*/
+
+*{
+    background-color: #2E2E3A;
+    color: #EEE5E9;
+    font-size: 1.2rem;
+}
+h1{
+    background-color: #446DF6;
+    padding: 1em;
+}
+body{
+    padding: 0.5em 1em;
+}

@@ -1,0 +1,3 @@
+Remembering User’s Info
+When you write an application you are communicating with the user. For there to be true communication it must be bidirectional. The user needs some way to speak to you.
+Computers can’t remember anything. 
