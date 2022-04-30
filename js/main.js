@@ -7,7 +7,7 @@ const links = [
     },
     {
         label: "Week2 notes",
-        url: "w02/story_editor.html"
+        url: "w02/index.html"
     }
 ];
 
