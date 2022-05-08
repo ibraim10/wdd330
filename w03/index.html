@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Week03</h2>
+    <ul>
+        <li><a href="index1.html">Week 3 | exercise 1 | Objects</a></li>
+        <li><a href="index2.html">Week 3 | exercise 2 | Arrays, Logic, and Loops</a></li>
+        <li><a href="index3.html">Week 3 | exercise 3 | Functions</a></li>
+    </ul>
+    <h2>Notes</h2>
+    <h3>This</h3>
+    <p>The keyword this refers to the object that it is within. It can be used inside methods to gain access to the object’s properties.</p>
+
+
+
+    <h3>Object Literals</h3>
+    <p>
+        An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, booleans, arrays and functions. If a property’s value is a function, it is known as a method. <br>
+        To create an object literal, simply enter a pair of curly braces. <br>
+        To access the properties of an object using the dot notation <br>
+        Also you can access an object’s properties using bracket notation
+    </p>
+    <p>   
+        As mentioned earlier, objects can inherit properties from other objects, so all objects have a method called hasOwnProperty(). This can be used to check whether an object has a property that is its own, rather than one that has been inherited from another object:
+    </p>
+
+    <h3>JSON</h3>
+    <p>
+        JSON is a string representation of the object literal notation that we have just seen <br>
+
+        The parse() method takes a string of data in JSON format and returns a JavaScript object <br>
+        The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data
+    </p>
+
+
+    <h3>The Date Object</h3>
+    <p>
+        Constructor Function
+        A constructor function is used to create a new date object using the new operator: <br> 
+        const today = new Date(); <br>
+        The variable today now points to a Date object. To see what the date is, we use the toString() method that all objects have: <br>
+        today.toString(); <br>
+        << 'Tue Feb 14 2017 16:35:18 GMT+0000 (GMT)' <br>
+        new Date(year,month,day,hour,minutes,seconds,milliseconds) <br>
+    
+        The getDay() and getUTCDay() methods are used to find the day of the week that the date object falls on. It returns a number, starting at 0 for Sunday <br>
+    
+    
+        The getDate() and getUTCDate() methods return the day of the month for the date object <br>
+    
+        The getMonth() and getUTCMonth() methods can be used to find the month of the date object. It returns an integer, but remember to count from 0; so January is 0, February is 1 <br>
+    
+        The getFullYear() and getUTCFullYear() methods return the year of the date object.  <br>
+        There are also getHours() 
+    </p>
+
+    <h3>The RegExp Object</h3>
+    <p>
+        A regular expression (or RegExp, for short) is a pattern that can be used to search strings for matches to the pattern. A common use is 'find and replace' type operations. For example, say you were looking for any word ending in 'ing', you could use the regular expression /[a-zA-Z]+ing$/. <br>
+
+        Creating Regular Expressions <br>
+        There are two ways to create a regular expression. The first, and preferred way, is to use the literal notation of writing the regular expression between forward slashes 
+    
+    </p>
+</body>
+</html>
