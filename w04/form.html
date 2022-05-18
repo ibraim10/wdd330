@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Search</title>
+</head>
+<body>
+    <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top" for="fn">First Name* <input type="text" name="fname" id="fn" required></label>
+            <label class="top" for="ln">Last Name* <input type="text" name="lname" id="ln" required></label>
+            <label class="top" for="phone">Phone <input type="tel" name="phone" id="phone" placeholder="1235551234"></label>
+            <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+            <label class="top" for="website">Website <input type="url" name="url" id="website" placeholder="http://" ></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Information</legend>
+            <div>Audience</div>
+            <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
+            <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
+            <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</label>
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Funding</legend>
+            <label class="top">Anticipated Completion Date<input type="date" name="complete"></label>
+            <label class="top">Course 
+                <select name="subject">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="software">JavaScript</option>
+                    <option value="creative">Python</option>
+                    <option value="info">PHP</option>
+                    <option value="data">React</option>
+                </select>
+            </label>
+            <label class="top">How many authors<input type="number" name="authors"></label>
+        </fieldset>
+        <input type="submit" value="Propose My Course" class="submitBtn">
+    </form>
+</body>
+</html>

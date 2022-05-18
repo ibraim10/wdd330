@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Week 04</h2>
+    <ul>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="search.html">Search</a></li>
+    </ul>
+    <h2>Notes</h2>
+    <h3>Forms</h3>
+    <p>
+        The action attribute is the URL that the form will be submitted to so it can be processed on the server side.
+    </p>
+
+    <h3>Accessing Form Elements</h3>
+
+    <p>
+        The legacy DOM had a useful property called document.forms that returns an HTML collection of all the forms in the document. <br> <br>
+    
+        const form = document.forms[0]; <br>
+
+        This is the equivalent of using the following method  <br>
+
+        const form = document.getElementsByTagname('form')[0]; 
+    </p>
+
+
+    <h3>Form Properties and Methods</h3>
+    <p>
+        A form can be submitted manually by the user employing a button or input element with a type attribute of submit, or even an input element with a type attribute of image: <br> <br>
+
+        The form.action property can be used to set the action attribute of a form, so it’s sent to a different URL to be processed on the server: form.action = '/an/other.url'
+
+    </p>
+    </body>
+</html>
