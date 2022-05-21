@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+    <h1>W05</h1>
+    <h2>Week 05</h2>
+    <ul>
+        <li><a href="exercise.html">Exercise</a></li>
+        <li><a href="testing.html">Testing</a></li>
+    </ul>
+    <h2>Notes</h2>
+        <h2>Testing and Debugging</h2>
+
+        <h3>Errors, Exceptions, and Warnings</h3>
+        <p>    
+            Errors are caused when something goes wrong in a program. They are usually caused by one of the following: <br>
+
+            System error ― there’s a problem with the system or external devices with which the program is interacting. <br>
+
+            Programmer error ― the program contains incorrect syntax or faulty logic; it could even be as simple as a typo. <br>
+
+            User error ― the user has entered data incorrectly, which the program is unable to handle.
+        </p>
+
+
+        <h3>Exceptions</h3>
+
+        <p>An exception is an error that produces a return value that can then be used by the program to deal with the error. </p>
+
+        <h3>Stack Traces</h3>
+
+        <p>An exception will also produce a stack trace. This is a sequence of functions or method calls that lead to the point where the error occurred. It’s often not just a single function or method call that causes an error. A stack trace will work backwards from the point at which the error occurred to identify the original function or method that started the sequence.</p>
+
+        <h3>Warnings</h3>
+
+        <p>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash. This means the program will continue to run after a warning. This might sound good, but it can be problematic, since the issue that produced the warning may cause the program to continue running incorrectly.</p>
+
+        <h3>Strict Mode</h3>
+
+        <p>
+            Strict mode encourages a better quality of JavaScript to be written that befits a programmer, Strict mode simply requires the following string to be added to the first line of a JavaScript file:
+            'use strict';
+        </p>
+
+        <h3>Debugging in the Browser</h3>
+
+        <p>Debugging is the process of finding out where bugs occur in the code and then dealing with them. In many cases, the point at which an error occurs is not always where it originated, so you’ll need to run through the program to see what’s happening at different stages of its execution. </p>
+
+        <h3>Tests</h3>
+
+        <p>A test can simply be a function that tests a piece of code runs as it should.</p>
+</body>
+</html>
