@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 :root{
-	--red: #8C1C13;
-	--blackPurple: #37123C;
-	--white: rgb(236, 236, 236);
-	--blue: #64A6BD;
-	--purple: #ADA7C9;
+	--blue: #78E3FD;
+	--blue_aqua: #34F6F2;
+	--white: #EEF8FF;
+	--black: #1C0F13;
+	--purple: #7D53DE;
 }
 
 * {
@@ -14,32 +14,35 @@
 }
 body {
 	height: 100vh;
+	width: 96%;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: 18px;
 	font-family: Acme, Arial, sans-serif;
-	background: rgb(100,166,189);
-	background: linear-gradient(267deg, rgba(100,166,189,1) 0%, rgba(173,167,201,1) 100%);
-	color: var(--blackPurple);
+	background: linear-gradient(270deg, #7D53DE 0%, #34F6F2 100%);
+	color: var(--white);
+	text-shadow: 2px 1px 0px var(--black);
 }
 
 h1 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 main {
-	margin: 0.5rem auto;
-	border: 0.5px solid var(--blackPurple);
+	margin: 0.5rem;
+	border: 0.5px solid var(--black);
 	padding: 0.5rem;
-	color: var(--blackPurple);
+	font-size: 1.3rem;
+	color: var(--white);
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr; 
 	width: 95%;
-	box-shadow: 0px 13px 19px -1px rgba(55,18,60,0.66);
-	-webkit-box-shadow: 0px 13px 19px -1px rgba(55,18,60,0.66);
-	-moz-box-shadow: 0px 13px 19px -1px rgba(55,18,60,0.66);
+	box-shadow: 0px 13px 19px -1px  rgb(28, 15, 19, 0.67);
+	-webkit-box-shadow: 0px 13px 19px -1px rgb(28, 15, 19, 0.67);
+	-moz-box-shadow: 0px 13px 19px -1px rgb(28, 15, 19, 0.67);
 	border-radius: 15px;
 }
 
@@ -47,15 +50,21 @@ input,
 button {
 	padding: 0.35rem;
 	margin-left: 1rem;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	background-color: var(--white);
 	border-radius: 8px;
 }
 button#addBtn{
-	color: var(--white);
-	background-color: var(--blackPurple);
-	border: var(--white);
+	color: var(--black);
+	background-color: var(--blue);
 	cursor:pointer;
+}
+button#addBtn:hover{
+	background-color: #34F6F2;
+}
+.btnC{
+	width: 16px;
+	height: 16px;
 }
 
 input {
@@ -63,13 +72,13 @@ input {
 }
 
 label {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 }
 .listcontainer {
-	border: 1px solid var(--blackPurple);
 	color: var(--white);
 	margin: 1rem;
-	padding: 0.3rem 0.5rem;
+	padding: 0;
+	margin: 0;
 }
 
 .list {
@@ -87,18 +96,22 @@ ul {
 li {
 	display: flex;
 	align-items: center;
+	padding: 0.2em  0.3em;
 	justify-content: space-between;
-	margin-bottom: 0.5rem;
+	margin: 1rem;
 	font-size: 1.2em;
+	box-shadow: 0px 4px 8px 0px  rgb(28, 15, 19, 0.67);
+	-webkit-box-shadow: 0px 4px 8px 0px rgb(28, 15, 19, 0.67);
+	-moz-box-shadow: 0px 4px 8px 0px rgb(28, 15, 19, 0.67);
 }
 .btn{
 	background-color: transparent;
-	box-shadow: 0px -12px 28px 11px rgba(55,18,60,0.24) inset;
-	-webkit-box-shadow: 0px -12px 28px 11px rgba(55,18,60,0.24) inset;
-	-moz-box-shadow: 0px -12px 28px 11px rgba(55,18,60,0.24) inset;
+	border: 3px inherit #7d53dec9;
 	cursor:pointer;
-	border: none;
 	text-shadow:0px 1px 0px #263666;
+}
+.btn:hover{
+	background-color: var(--blue);
 }
 .sort{
 	display: flex;
@@ -108,8 +121,8 @@ li {
 	text-decoration: line-through;
 	color: rgb(203, 203, 203);
 }
-.disabled{
-	background-color: var(--purple);
+.x{
+	border: none;
 }
 #date{
 	letter-spacing: .25em;
@@ -117,12 +130,18 @@ li {
 /*-----toggle-------*/
 
 button.check{
-	background-color: rgb(16, 238, 16);
-	border: 2px solid var(--blackPurple);
+	background-color: rgb(12, 168, 12);
+	border: none;
+}
+button.check:hover{
+	background-color: rgb(14, 199, 14);
 }
 button.unCheck{
-	background-color: gray ;
-	border: 2px solid var(--blackPurple);
+	background-color: rgb(219, 219, 219) ;
+	border: none;
+}
+button.unCheck:hover{
+	background-color: rgb(203, 203, 203) ;
 }
 ul.active li{
 	display: none;
@@ -144,5 +163,8 @@ ul.completed li.show{
 
 	main {
 		width: 480px;
+	}
+	body{
+		width: 100%;
 	}
 }

@@ -36,9 +36,9 @@ function addTask(task, id, completed, deleted){
 
     const newTask = `
     <li id="${id}">
-        <button class=" ${COMPLETED}" data="completed" id="${id}"></button>
+        <button class="btnC ${COMPLETED}" data="completed" id="${id}"></button>
         <p class="${LINE} task">${task}</p>
-        <button class="btn delete" data="deleted" id="${id}">❌</button>
+        <button class="btn x delete" data="deleted" id="${id}">❌</button>
     </li>    
     `
     list.insertAdjacentHTML("beforeend",newTask);
