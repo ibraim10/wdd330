@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+    <h1>W07</h1>
+    <h2>Week 07</h2>
+    <ul>
+        <li><a href="ajax.html">Ajax</a></li>
+        <li><a href="todo.html">todo</a></li>
+    </ul>
+    <h2>Notes</h2>
+        <h2>Ajax</h2>
+        Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading. This enables data to be sent and received in the background, as well as portions of a page to be updated in response to user events, while the rest of the program continues to run. <br>
+
+        <h2>Asynchronous</h2>
+        When a request for data is sent, the program doesn’t have to stop and wait for the response. It can carry on running, waiting for an event to fire when a response is received. By using callbacks to manage this, programs are able to run in an efficient way, avoiding lag as data is transferred back and forth.<br>
+
+
+        With Ajax now users could see new content on web pages without having to refresh the page. Shopping baskets could be updated in the background, partial page content could be loaded seamlessly, and photo galleries could dynamically load images.<br>
+
+        <h2>APIs</h2>
+        An application programming interface (API) is a collection of methods that allows external access to another program or service. Many websites allow controlled access to their data via public APIs. This means that developers are able to interact with the data and create mashups of third-party services. A weather site, for example, might have an API that provides methods that return information about the weather in a given location, such as temperature, wind speed, and so on.<br>
+
+        <h2>Basic Usage</h2>
+        The Fetch API provides a global fetch() method that only has one mandatory argument, which is the URL of the resource you wish to fetch. A very basic example would look something like the following piece of code:<br><br>
+
+        fetch('https://example.com/data')<br>
+        .then( // code that handles the response )<br>
+        .catch( // code that runs if the server returns an error )<br>
+
+        the fetch() method returns a promise that resolves to the response returned from the URL that was provided as an argument. In the example above, the promise will be resolved when a response is received from the URL 'https:example.com/data'. Because it’s a promise, we can also use a catch statement at the end to deal with any errors that may occur.<br>
+
+        <h2>Text Responses</h2>
+        The text() method takes a stream of text from the response, reads it to completion and then returns a promise that resolves to a USVSting object that can be treated as a string in JavaScript.<br><br>
+
+        fetch(url)<br>
+        .then( response => response.text() ); // transforms the text stream into a JavaScript string<br>
+        .then( text => console.log(text) )<br>
+        .catch( error => console.log('There was an error: ', error))<br>
+
+        <h2>File Responses</h2>
+        The blob() method is used to read a file of raw data, such as an image or a spreadsheet. Once it has read the whole file, it returns a promise that resolves with a blob object.<br><br>
+
+        fetch(url)<br>
+        .then( response => response.blob() ); // transforms the data into a blob object<br>
+        .then( blob => console.log(blob.type) )<br>
+        .catch( error => console.log('There was an error: ', error))<br>
+
+
+
+        <h2>JSON Responses</h2>
+        JSON is probably the most common format for AJAX responses. The json() method is used to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.<br><br>
+
+        fetch(url)<br>
+        .then( response => response.json() ); // transforms the JSON data into a JavaScript object<br>
+        .then( data => console.log(Object.entries(data)) )<br>
+        .catch( error => console.log('There was an error: ', error))<br>
+</body>
+</html>
