@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+    <h1>W08</h1>
+    <h2>Week 08</h2>
+    <ul>
+        <li><a href="transitions.html">Transitions</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+    </ul>
+    <h2>Notes</h2>
+    <h3>Transforms</h3>
+    The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page. 
+
+    <h3>Translation</h3>
+    Translation functions allow you to move elements left, right, up, or down. These functions are similar to the behavior of position: relative; when declaring top and left, moving elements up and down or left and right along the x and y axes. 
+    <br><br>
+    transform: translate(x,y);
+
+
+    <h3>Scaling</h3>
+    The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it will be used for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio.
+    <br><br>
+    transform: scale(x, y);
+
+
+
+    <h3>Rotation</h3>
+    The rotate() function rotates an element around the point of origin by a specified angle value. As with scale, by default the point of origin is the element’s center. Generally, angles are declared in degrees, with positive degrees moving clockwise and negative moving counterclockwise. 
+
+
+
+    <h3>Skew</h3>
+    The skew(x,y) function specifies a skew along the x and y axes. As you’d expect, the x specifies the skew on the x axis, and the y specifies the skew on the y axis.
+
+
+    <h3>Transitions</h3>
+    Transitions allow the values of CSS properties to change over time, essentially providing simple animations. For example, if a link changes color on hover, you can have it gradually fade from one color to the other instead of a sudden change. They’re both transitions, but with the CSS transition property the color transition can be gradual. If the browser lacks support for transitions, the change will be immediate instead of gradual, which is fine and accessible.
+
+    <h3>Animations</h3>
+    <h4>Keyframes</h4>
+    To animate an element in CSS, you first create a named animation, then attach it to an element in that element’s property declaration block. Animations in themselves don’t do anything; in order to animate an element, you’ll need to associate the animation with that element. To create an animation, use the @keyframes
+    <br><br>
+    @-webkit-keyframes myAnimation { <br>
+        /* put animation keyframes here */<br>
+    }<br><br>
+    @keyframes myAnimation { <br>
+        /* put animation keyframes here */<br>
+    }
+</body>
+</html>
