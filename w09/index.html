@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+    <h1>W09</h1>
+    <h2>Week 09</h2>
+    <ul>
+        <li><a href="animation.html">Animation</a></li>
+        <li><a href="factors.html">Factors</a></li>
+        <li><a href="/w09/websocket/websocket.html">Websocket</a></li>
+    </ul>
+    <h2>Notes</h2>
+    <h3>The Window Object</h3>
+    Every JavaScript environment has a global object. Any variables that are created in the global scope are actually properties of this object, and any functions are methods of it. In a browser environment the global object is the window object, which represents the browser window that contains a web page. <br>
+
+    These are variables that are created without using the const, let or var keywords. Global variables can be accessed in all parts of the program. <br>
+
+    Global variables are actual properties of a global object. In a browser environment, the global object is the window object. This means that any global variable created is actually a property of the window object, as can be seen in the example below: <br><br>
+
+    x = 6;  // global variable created <br>
+    << 6  <br> <br>
+
+    window.x // same variable can be accessed as a property of the window object <br>
+    << 6 <br> <br>
+
+    // both variables are exactly the same <br>
+    window.x === x; <br>
+    << true <br> <br>
+
+
+    <h3>Dialogs</h3> <br>
+
+    The window.alert() method will pause the execution of the program and display a message in a dialog box. The message is provided as an argument to the method, and undefined is always returned <br>
+
+
+    The window.confirm() method will stop the execution of the program and display a confirmation dialog that shows the message provided as an argument, and giving the options of OK or Cancel. It returns the boolean values of true if the user clicks OK, and false if the user clicks Cancel <br>
+
+    The window.prompt() method will stop the execution of the program. It displays a dialog that shows a message provided as an argument, as well as an input field that allows the user to enter text. This text is then returned as a string when the user clicks OK. If the user clicks Cancel, null is returned <br>
+
+    The window object has a navigator property that returns a reference to the Navigator object. The Navigator object contains information about the browser being used. Its userAgent property will return information about the browser and operating system being used.for example: <br> <br>
+    window.navigator.userAgent <br>
+    << "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8" <br>
+    Don’t rely on this information though, as it can be modified by a user to masquerade as a different browser.  <br> <br>
+
+
+    <h3>Location</h3><br>
+    The window.location property is an object that contains information about the URL of the current page. The href property returns the full URL as a string: <br> <br>
+
+    window.location.href  <br>
+    << "https://www.sitepoint.com/premium/books/javascript-novice-to-ninja" <br> <br>
+
+    The protocol property returns a string describing the protocol used (such as http, https, pop2, ftp etc.). Note that there is a colon (:) at the end: <br> <br>
+    window.location.protocol  <br>
+    << "https:" <br>
+
+    The host property returns a string describing the domain of the current URL and the port number (this is often omitted if the default port 80 is used): <br> <br>
+
+    window.location.host <br>
+    << "www.sitepoint.com" <br> <br>
+
+    The hostname property returns a string describing the domain of the current URL: <br> <br>
+
+    window.location.hostname <br>
+    << "www.sitepoint.com" <br>
+
+    The pathname property returns a string of the path that follows the domain: <br> <br>
+
+    window.location.pathname <br>
+    << "/premium/books/javascript-novice-to-ninja" <br> <br>
+
+
+    <h3>The Browser History</h3> <br>
+    The window.history property can be used to access information about any previously visited pages in the current browser session. Avoid confusing this with the new HTML5 History API.  <br> <br>
+
+    The window.history.length property shows how many pages have been visited before arriving at the current page. <br> <br>
+
+    The window.history.go() method can be used to go to a specific page, where 0 is the current page <br>
+    window.history.go(1); // goes forward 1 page <br>
+    window.history.go(0); // reloads the current page <br>
+    window.history.go(-1); // goes back 1 page <br> <br>
+
+
+    <h3>The Document Object</h3> <br>
+    Each window object contains a document object. This object has properties and methods that deal with the page that has been loaded into the window. In Chapter 6, we covered the Document Object Model and the properties and methods used to manipulate items on the page. The document object contains a few other methods that are worth looking at. <br>
+
+
+    <h3>Creating Cookies</h3> <br> 
+    To create a cookie, you assign it to JavaScript’s “cookie jar”, using the document.cookie property, like so <br>
+    document.cookie = 'name=Superman'; <br>
+    << "name=Superman" <br>
+</html>
