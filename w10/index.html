@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+    <h1>W10</h1>
+    <h2>Week 10</h2>
+    <ul>
+        <li><a href="examples/ValidationAPI.html">The Constraint Validation API</a></li>
+    </ul>
+    <h2>Notes</h2>
+    <h3>Client-side form validation</h3>
+
+    <ul>
+        <li>
+            We want to get the right data, in the right format. Our applications won't work properly if our users' data is stored in the wrong format, is incorrect, or is omitted altogether.
+        </li>
+        <li>
+            We want to protect our users' data. Forcing our users to enter secure passwords makes it easier to protect their account information.
+        </li>
+        <li>
+            We want to protect ourselves. There are many ways that malicious users can misuse unprotected forms to damage the application 
+        </li>    
+    </ul>
+    <p>    
+    There are two different types of client-side validation that you'll encounter on the web: <br><br>
+    
+    Built-in form validation uses HTML5 form validation features, which we've discussed in many places throughout this module. This validation generally doesn't require much JavaScript. Built-in form validation has better performance than JavaScript, but it is not as customizable as JavaScript validation.
+    JavaScript validation is coded using JavaScript. This validation is completely customizable, but you need to create it all (or use a library).
+    </p>
+
+    <h3>The Constraint Validation API</h3>
+
+    <p>
+        Most browsers support the Constraint Validation API, which consists of a set of methods and properties available on the following form element DOM interfaces: <br><br>
+
+        HTMLButtonElement<br>
+        HTMLFieldSetElement <br>
+        HTMLInputElement <br>
+        HTMLOutputElement <br>
+        HTMLSelectElement <br>
+        HTMLTextAreaElement<br>
+    </p>
+
+    <h3>Using the Fetch API</h3>
+    The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network. <br>
+
+    This kind of functionality was previously achieved using XMLHttpRequest. Fetch provides a better alternative that can be easily used by other technologies such as Service Workers. Fetch also provides a single logical place to define other HTTP-related concepts such as CORS and extensions to HTTP.
+
+
+
+</html>
