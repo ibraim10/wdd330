@@ -1,0 +1,299 @@
+:root {
+    --blue: #275ead;
+    --blueLight: #4170dd;
+    --white: #ffffff;
+    --yellow: #f3c505;
+}
+
+*{
+    font-family: 'Changa', sans-serif;
+    background-color: var(--white);
+}
+h1{
+    text-align: center;
+    color: var(--blue);
+}
+/*-----------------HEADER----------------*/
+header div.header div.logoHeader img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 0.4rem;
+}
+div.nav{
+    display: flex;
+    flex-direction: row;
+    padding: 0.3rem 0rem 0.2rem 0;
+    background-color: var(--blue);
+}
+div.nav nav{
+    width: 70%;
+    background-color: var(--blue);
+}
+div.nav div.socialMedia{
+    width: 30%;
+    text-align: end;
+    margin: auto;
+    padding-right: 0.5rem;
+    background-color: var(--blue);
+}
+div.nav ul{
+    list-style: none;
+    padding: 0.8em 0 0 0;
+    margin: 0;
+    text-align: center;
+    background-color: var(--blue);
+}
+div.nav ul li a{
+    display: block;
+    padding: 0.5em 0;
+    text-decoration: none;
+    color: var(--yellow);
+    border-top: 1px solid var(--yellow);
+    width: 100%;
+    background-color: var(--blue);
+}
+div.nav button{
+    margin: .2rem .1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;    
+}
+div.nav button span{
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+
+.social-media{
+    width: 1.5rem;
+    background-color: var(--blue);
+}
+/*-----------bottom----------*/
+div.nav ul li.active a{
+    color: #fefffeff;
+}
+div.nav ul{
+    display: none;
+}
+div.nav ul.open {
+    display: block;
+}
+#hamburguerBtn span:nth-child(1){
+    display: block;
+}
+#hamburguerBtn span:nth-child(2){
+    display: none;
+}
+#hamburguerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburguerBtn.open span:nth-child(2){
+    display: block;
+}
+/*------------FOOTER-----------------*/
+footer div.footer{
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid #3993ddff;
+    margin-top: 1.7em;
+}
+footer div.footer .section-footer3{
+    border-top: 1px solid #3993ddff;
+}
+
+.section-footer3 img{
+    width: 40%;
+}
+/*---------main-----------*/
+.main{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+.main-home .card{
+    display: grid;
+    padding: 0.8rem;
+    margin: auto;
+    width: 80%;
+    box-shadow: 10px 10px 14px 3px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 10px 10px 14px 3px rgba(0,0,0,0.67);
+    -moz-box-shadow: 10px 10px 14px 3px rgba(0,0,0,0.67);
+
+}
+.main-home .img-container img{
+    width: 50%;
+    border-radius: 360px;
+}
+.main-home .info{
+    margin-top: 0.7rem;
+}
+.main-home .types{
+    border-bottom:1px solid black;
+    margin: auto;
+    padding-bottom: 0.5rem;
+}
+.main-home form{
+    margin-bottom: 1.3rem;
+}
+.main-home .stats div{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.img{
+    width: 1rem;
+    margin: auto;
+}
+.poke-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/*----------main-pokemons----------------*/
+.main-pokemons .all-pokemons{
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--white);
+}
+.pokemon-block{
+    width: 90%;
+    box-shadow: 3px 10px 5px 4px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 3px 10px 5px 4px rgba(0,0,0,0.62);
+    -moz-box-shadow: 3px 10px 5px 4px rgba(0,0,0,0.62);
+    margin: 0.5rem;
+    background: rgb(39,94,173);
+    background: linear-gradient(90deg, rgba(39,94,173,1) 0%, rgba(220,241,249,1) 100%);
+}
+
+.pokemon-block img{
+    width: 70%;
+    background: none;
+
+}
+.img-container{
+    background: none;
+}
+.pokemon-block p{
+    background: none;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0.2rem;
+}
+/*-----------------main-contact------------------*/
+.main-contact li{
+    background-color: var(--blueLight);
+    border-bottom: 3px dotted var(--yellow);
+    width: 100%;
+}
+
+.main-contact li:nth-child(4){
+    border-bottom: none;
+} 
+.main-contact ul{
+    background-color: var(--blueLight);
+    border: 2px solid var(--yellow);
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0.2rem;
+    color: var(--white);
+}
+.main-contact form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem;
+}
+.main-contact form label{
+text-align: start;
+}
+form label.top input{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: .75rem;
+    color: black;
+    width: 70%;
+    max-width: 20rem;
+    background-color: rgba(242, 255, 0, 0.1);
+    
+}
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    margin-left: 2%;
+    text-align:start;
+}
+form label.sbs input{
+    margin-right: 2%;
+}
+form legend{
+    color: var(--yellow);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: var(--blueLight);
+    font-size: 1rem;
+}
+form fieldset{
+    margin: 2rem 0.5rem;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    padding: .7rem 3%;
+}
+form input.submitBtn{
+    background-color: var(--yellow);
+    color: var(--white);
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    margin: -.5rem 0 .5rem 0.9rem;
+    width: 96%;
+    max-width: 20rem;
+    border: var(--blue);
+    
+}
+form input.submitBtn:hover{
+    background-color: rgb(255, 217, 0);
+    transition: .1s;
+}
+.submitBtn:active {
+    background-color: var(--blueLight);
+    box-shadow: 0 5px #FF0022;
+    transform: translateY(4px);
+}
+
+form label.top input:required{
+    border-left: red solid 5px;
+}
+form label.top input:required:valid{
+    border-left: rgb(16, 238, 16) solid 5px;
+}
+.nick{
+    margin: 0;
+    margin-bottom: -0.9rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+/*--------main-thanks-------*/
+.main-thanks img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*----------------*/
+.remember-from input.btn2{
+    width: 100px;
+    margin: 0.5rem;
+}
+.main-home h1{
+    margin-bottom: 0;
+}

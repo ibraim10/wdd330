@@ -1,0 +1,27 @@
+@media only screen and (min-width: 75rem){
+    /*---------------main----------------*/
+    .main-home div.card{
+        width: 27%;
+    }
+    /*----------main-pokemons----------------*/
+    #all-pokemons{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 3rem;
+    }
+    #all-pokemons .pokemon-block{
+        width: 80%;
+    }
+    #all-pokemons .pokemon-block p{
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+    /*--------------main contact------------*/
+    .main-contact{
+        width: 50%;
+        margin: auto;
+    }
+    /*--------main-thanks-------*/
+    div#thnks img{
+        width: 13%;
+    }
+}
